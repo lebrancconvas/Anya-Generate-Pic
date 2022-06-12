@@ -35,7 +35,7 @@ function App() {
       <div>
       {data.filter((_, index: number) => index === RNG).map((item: IData, index: number) => {
         return(
-          <img src={item.url} alt="anya"/>
+          <img src={item.url} alt="anya" key={index} /> 
         )
       })}
       </div>
